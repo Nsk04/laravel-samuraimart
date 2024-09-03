@@ -24,7 +24,7 @@
             @foreach ($cart as $product)
             <div class="col-md-2 mt-2">
                 <a href="{{route('products.show', $product->id)}}">
-                @if ($product->options->image)
+                    @if ($product->options->image)
                     <img src="{{ asset($product->options->image) }}" class="img-fluid w-100">
                     @else
                     <img src="{{ asset('img/dummy.png')}}" class="img-fluid w-100">
