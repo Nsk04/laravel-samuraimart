@@ -102,11 +102,5 @@ class UserController extends AdminController
 
         return $form;
     }
-    
-    public function destroy(Request $request)
-    {
-        Auth::user()->delete();
-        return redirect('/');
-    }
 
 }
