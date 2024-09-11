@@ -7,7 +7,6 @@ use App\Admin\Controllers\MajorCategoryController;
 use App\Admin\Controllers\UserController;
 use App\Admin\Controllers\ShoppingCartController;
 
-
 Admin::routes();
 
 Route::group([

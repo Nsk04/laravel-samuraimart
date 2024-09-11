@@ -39,12 +39,12 @@ class ProductController extends AdminController
         $grid->column('price', __('Price'))->sortable();
         $grid->column('category.name', __('Category Name'));
         $grid->column('image', __('Image'))->image();
-        $grid->column('carriage_flag', __('Carriage Flag'));
         $grid->column('recommend_flag', __('Recommend Flag'));
+        $grid->column('carriage_flag', __('Carriage Flag'));
         $grid->column('created_at', __('Created at'))->sortable();
         $grid->column('updated_at', __('Updated at'))->sortable();
 
-        $grid->filter(function($filter) {
+        $grid->filter(function ($filter) {
             $filter->like('name', '商品名');
             $filter->like('description', '商品説明');
             $filter->between('price', '金額');

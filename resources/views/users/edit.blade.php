@@ -93,6 +93,7 @@
                     保存
                 </button>
             </form>
+            
             <hr>
             <div class="d-flex justify-content-start">
                 <form method="POST" action="{{ route('mypage.destroy') }}">
